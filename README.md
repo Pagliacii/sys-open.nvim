@@ -1,15 +1,19 @@
-# sys-open.nvim
+# 🚀 sys-open.nvim
 
 Open a path/link/github repo under cursor with system app.
 
 I don't know why the `gx` sometimes opens the link and sometimes it doesn't. And I also want `gx` to be able to quickly access GitHub repos like `Pagliacii/sys-open.nvim`, so I wrote this Neovim plugin. Of course, this is my first plugin that I've written. So if you encounter any issues or have any ideas while using it, feel free to fire an issue.
 
-## Features
+## ✨ Features
 
 - customize open command
 - open the GitHub repo quickly
 
-## Install
+## 📋 Requirements
+
+- Neovim >= **0.8.0** (needs to be built with **LuaJIT**)
+
+## 📦 Installation
 
 Using [Lazy.nvim](https://github.com/folke/lazy.nvim):
 
@@ -27,17 +31,9 @@ return {
 }
 ```
 
-## Usage
+## ⚙️ Configuration
 
-Call `SysOpen`, or use a keybinding likes `gx` above.
-
-## Commands
-
-- `SysOpen`
-
-## Options
-
-Default options:
+Default settings:
 
 ```lua
 opts = {
@@ -52,6 +48,19 @@ opts = {
 }
 ```
 
-## How
+## ℹ️ Usage
+
+Call `SysOpen`, or use a keybinding likes `gx` above.
+
+## ⌨️ Commands
+
+- `SysOpen`
+
+## 📚 How
 
 Using `vim.fn.expand("<cWORD>")` to get the word under cursor, and execute the system related `open` to invoke the default app to open it.
+
+## 📦 Alternatives
+
+- [tyru/open-browser.vim](https://github.com/tyru/open-browser.vim)
+- [xiyaowong/link-visitor.nvim](https://github.com/xiyaowong/link-visitor.nvim)

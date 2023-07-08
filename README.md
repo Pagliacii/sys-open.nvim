@@ -18,6 +18,7 @@ return {
   {
     "Pagliacii/sys-open.nvim",
     config = true,
+    cmd = { "SysOpen" },
     --- optional keybinding
     keys = {
       { "gx", "<cmd>SysOpen<cr>", desc = "Open with the system app", silent = true },

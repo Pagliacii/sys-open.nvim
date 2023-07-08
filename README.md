@@ -17,6 +17,8 @@ Using [Lazy.nvim](https://github.com/folke/lazy.nvim):
 return {
   {
     "Pagliacii/sys-open.nvim",
+    config = true,
+    --- optional keybinding
     keys = {
       { "gx", "<cmd>SysOpen<cr>", desc = "Open with the system app", silent = true },
     },

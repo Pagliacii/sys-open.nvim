@@ -39,13 +39,13 @@ Default options:
 ```lua
 opts = {
   open_cmd = nil, -- auto-detected at default
-	debug = false, -- enable more debug infos
-	silent = false, -- silent the error message
-	open_dir = true, -- open the directory path or not
-	github_repo = true, -- quick access a GitHub repo
-	github_repo_pattern = "^[%w-]+/[%w-.]+$",
-	link_pattern = "(https?://[%w-_%.%?%.:/%+=&]+)",
-	exclude_chars = "[%[%](){}<>!;,\"']",
+  debug = false, -- enable more debug infos
+  silent = false, -- silent the error message
+  open_dir = true, -- open the directory path or not
+  github_repo = true, -- quick access a GitHub repo
+  github_repo_pattern = "^[%w-]+/[%w-.]+$",
+  link_pattern = "(https?://[%w-_%.%?%.:/%+=&]+)",
+  exclude_chars = "[%[%](){}<>!;,\"']",
 }
 ```
 
